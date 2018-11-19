@@ -19,9 +19,7 @@ const token = 'axcessFIN';
 
     res.json(data);
 
-
 fileManager.createPayloadFile(req_body);
-
 });
 
 app.listen(3000, () => console.log('The Webhook is now listening'));

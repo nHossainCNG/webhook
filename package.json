@@ -4,12 +4,16 @@
   "description": "webhook for circleCI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "cleanPayloads": "shx rm -rf ./ci_payloads/* && shx echo Done"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2"
   }
 }
